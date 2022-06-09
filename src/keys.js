@@ -1,7 +1,7 @@
 module.exports={
     database:{
-        host:'localhost',
-        databse:'',
+        host:'127.0.0.1',
+        database:'cyberdine_db',
         user:'root',
         password:''
     }
