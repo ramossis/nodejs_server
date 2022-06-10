@@ -7,4 +7,5 @@ routes.get('/',(req,res)=>{
     res.end();
 });
 routes.get('/api/get-categoria',CategoriaController.index);
+routes.post('/api/store-categoria',CategoriaController.store);
 module.exports=routes;

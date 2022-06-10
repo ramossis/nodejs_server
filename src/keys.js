@@ -1,8 +1,9 @@
+require('dotenv').config();
 module.exports={
     database:{
-        host:'127.0.0.1',
-        database:'cyberdine_db',
-        user:'root',
-        password:''
+        host:process.env.HOST,
+        database:process.env.DATA_BASE,
+        user:process.env.USER,
+        password:process.env.PASSWORD
     }
 }

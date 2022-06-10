@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express=require('express');
 const morgan=require('morgan');
 const path =require('path');
@@ -24,7 +25,7 @@ app.use(express.static(path.join(__dirname,'public')));
 /**
  * EJECUTAR SERVIDOR
  * */ 
-app.set('port',3000)
+app.set('port',process.env.PORT);
 app.listen(app.get('port'),()=>{
     console.log("Servidor ejecutandose")
 });
